@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-<!--    color bg logo -->
+    <!--    color bg logo -->
     <color name="logo_bg">#EBF8EE</color>
     <color name="sub_title">#979899</color>
     <color name="my_light_primary">#23AA49</color>

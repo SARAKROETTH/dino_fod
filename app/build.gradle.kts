@@ -7,6 +7,10 @@ android {
     namespace = "com.example.dinofood"
     compileSdk = 36
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.dinofood"
         minSdk = 24
@@ -45,4 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.hbb20:ccp:2.7.3")
 }
