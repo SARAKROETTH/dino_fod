@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.auth.view.LoginActivity">
+    tools:context=".feature.auth.view.VerifyOtpActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,7 +29,7 @@
         android:layout_marginTop="24dp"
         android:fontFamily="@font/dm_sans"
         android:paddingHorizontal="50sp"
-        android:text="Enter your mobile number"
+        android:text="OTP Verification"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -44,7 +44,8 @@
         android:layout_marginTop="12dp"
         android:fontFamily="@font/dm_sans"
         android:paddingHorizontal="50sp"
-        android:text="We will send you a verification code"
+        android:text="Enter the OTP which is send to your mailing
+                     Number : +855 000 000 000"
         android:textAlignment="center"
         android:textColor="@color/sub_title"
         android:textSize="12sp"
@@ -54,74 +55,105 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/container_layout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="25dp"
+        app:flow_verticalGap="40dp"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/ccp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:ccp_defaultNameCode="kh"
-            app:ccp_showFlag="false"
-            app:ccp_showNameCode="false"
-            app:ccp_showPhoneCode="true"
-            app:ccp_textSize="24sp" />
+
 
         <EditText
-            android:id="@+id/phone_number_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/border_input"
+            android:hint="0"
             android:fontFamily="@font/dm_sans"
-            android:hint="0000000000"
-            android:importantForAutofill="no"
+            android:textSize="24sp"
+            android:layout_marginRight="12sp"
+            android:background="@drawable/border_input_otp"
             android:inputType="phone"
             android:padding="12sp"
-            android:textSize="24sp" />
+            />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="24sp"
+            android:layout_marginRight="12sp"
+            android:background="@drawable/border_input_otp"
+            android:inputType="phone"
+            android:padding="12sp"
+            />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_marginRight="12sp"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="24sp"
+            android:background="@drawable/border_input_otp"
+            android:inputType="phone"
+            android:padding="12sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:layout_marginRight="12sp"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="24sp"
+            android:background="@drawable/border_input_otp"
+            android:inputType="phone"
+            android:padding="12sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:fontFamily="@font/dm_sans"
+            android:textSize="24sp"
+            android:background="@drawable/border_input_otp"
+            android:inputType="phone"
+            android:padding="12sp"
+            />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/text_span"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:paddingHorizontal="40sp"
-        android:text="By clicking on “Continue” you are agreeing to our terms of use "
-        android:textAlignment="center"
-        android:fontFamily="@font/dm_sans"
+        android:layout_marginTop="32dp"
+        android:text="Don’t received OTP? Resend OTP"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/container_layout" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="48dp"
         android:backgroundTint="@color/my_light_primary"
-        android:textColor="@color/white"
         android:fontFamily="@font/dm_sans"
         android:paddingVertical="14sp"
         android:text="Continue"
-        android:textStyle="bold"
+        android:textColor="@color/white"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

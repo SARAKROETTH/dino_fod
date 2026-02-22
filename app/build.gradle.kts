@@ -50,4 +50,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.hbb20:ccp:2.7.3")
+    implementation("com.google.android.material:material:1.11.0")
 }

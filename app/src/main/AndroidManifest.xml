@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DinoFood">
         <activity
+            android:name=".feature.auth.view.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.auth.view.VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.home.view.BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
