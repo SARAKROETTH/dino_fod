@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
 
     <!-- ScrollView for main content -->
     <ScrollView
@@ -122,66 +123,135 @@
 
             </LinearLayout>
 
-            <!-- Promotional Banner -->
-            <LinearLayout
+            <!-- Promotional Banner (Scrollable) -->
+            <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/banner_background"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
+                android:scrollbars="none"
                 android:layout_marginBottom="20dp">
 
-                <!-- Banner Image -->
-                <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_banner_food"
-                    android:contentDescription="Food items"
-                    android:scaleType="centerInside" />
-
-                <!-- Banner Content -->
                 <LinearLayout
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:background="#22C55E"
-                    android:padding="16dp">
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ramadan Offers"
-                        android:textSize="14sp"
-                        android:textColor="#FFFFFF" />
+                    <!-- Banner Card 1 -->
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginEnd="12dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Get 25%"
-                        android:textSize="28sp"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold"
-                        android:layout_marginTop="8dp" />
+                        <!-- Banner Image -->
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/bottom_image"
+                            android:contentDescription="Fresh groceries"
+                            android:scaleType="centerCrop" />
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="36dp"
-                        android:text="Grab Offer >"
-                        android:textColor="#22C55E"
-                        android:background="@drawable/button_background"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
-                        android:layout_marginTop="12dp"
-                        android:textSize="12sp" />
+                        <!-- Banner Content -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#22C55E"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ramadan Offers"
+                                android:textSize="14sp"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Get 25%"
+                                android:textSize="28sp"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:text="Grab Offer >"
+                                android:textColor="#22C55E"
+                                android:background="@drawable/button_background"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:layout_marginTop="12dp"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Banner Card 2 (Duplicate for continuous scroll effect) -->
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginEnd="12dp">
+
+                        <!-- Banner Image -->
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@drawable/bottom_image"
+                            android:contentDescription="Fresh groceries"
+                            android:scaleType="centerCrop" />
+
+                        <!-- Banner Content -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="#22C55E"
+                            android:padding="16dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ramadan Offers"
+                                android:textSize="14sp"
+                                android:textColor="#FFFFFF" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Get 25%"
+                                android:textSize="28sp"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="36dp"
+                                android:text="Grab Offer >"
+                                android:textColor="#22C55E"
+                                android:background="@drawable/button_background"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:layout_marginTop="12dp"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
-            </LinearLayout>
+            </HorizontalScrollView>
 
             <!-- Ingredient Section Header -->
             <LinearLayout
@@ -234,7 +304,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_carrot"
+                            android:src="@drawable/img_carrot"
                             android:contentDescription="Carrot" />
 
                         <TextView
@@ -260,7 +330,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_avocado"
+                            android:src="@drawable/img_avocado"
                             android:contentDescription="Avocado" />
 
                         <TextView
@@ -286,7 +356,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_corn"
+                            android:src="@drawable/img_corn"
                             android:contentDescription="Corn" />
 
                         <TextView
@@ -312,7 +382,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_broccoli"
+                            android:src="@drawable/img_brocoli"
                             android:contentDescription="Broccoli" />
 
                         <TextView
@@ -338,7 +408,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_potato"
+                            android:src="@drawable/img_potato"
                             android:contentDescription="Potato" />
 
                         <TextView
@@ -364,7 +434,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_tuna"
+                            android:src="@drawable/img_tuna"
                             android:contentDescription="Tuna" />
 
                         <TextView
@@ -390,7 +460,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_tomato"
+                            android:src="@drawable/img_tomato"
                             android:contentDescription="Tomato" />
 
                         <TextView
@@ -416,7 +486,7 @@
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/ic_banana"
+                            android:src="@drawable/img_banana"
                             android:contentDescription="Banana" />
 
                         <TextView
@@ -603,7 +673,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:background="@android:color/white"
-        android:elevation="4dp">
+        android:elevation="8dp">
 
         <!-- Home -->
         <LinearLayout
@@ -614,14 +684,15 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home_filled"
-                android:contentDescription="Home" />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_home"
+                android:contentDescription="Home"
+                android:tint="#000000" />
 
         </LinearLayout>
 
-        <!-- Categories -->
+        <!-- Categories/Menu -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -630,10 +701,11 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_categories"
-                android:contentDescription="Categories" />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_menu"
+                android:contentDescription="Menu"
+                android:tint="#000000" />
 
         </LinearLayout>
 
@@ -650,10 +722,11 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_cart"
-                    android:contentDescription="Cart" />
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/ic_shopping_cart"
+                    android:contentDescription="Cart"
+                    android:tint="#000000" />
 
                 <TextView
                     android:layout_width="20dp"
@@ -664,13 +737,14 @@
                     android:textSize="10sp"
                     android:textStyle="bold"
                     android:background="@drawable/cart_badge_background"
-                    android:layout_gravity="top|right" />
+                    android:layout_gravity="top|right"
+                    android:visibility="visible" />
 
             </FrameLayout>
 
         </LinearLayout>
 
-        <!-- Favorites -->
+        <!-- Favorites/Heart -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -679,14 +753,15 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_favorites"
-                android:contentDescription="Favorites" />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_heart"
+                android:contentDescription="Favorites"
+                android:tint="#000000" />
 
         </LinearLayout>
 
-        <!-- Profile -->
+        <!-- Profile/Person -->
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -695,10 +770,11 @@
             android:gravity="center">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_profile"
-                android:contentDescription="Profile" />
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_person"
+                android:contentDescription="Profile"
+                android:tint="#000000" />
 
         </LinearLayout>
 
