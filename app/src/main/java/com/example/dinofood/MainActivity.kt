@@ -5,17 +5,21 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.dinofood.databinding.ActivityMainBinding
+import android.widget.LinearLayout
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    // Ingredient list for cleaner iteration
+    private val ingredients = listOf(
+        "carrot", "corn", "avocado", "tomato", "potato", "broccoli", "tuna", "banana",
+        "spinach", "chicken", "fish", "beef", "cheese", "pepper"
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
+        enableEdgeToEdge()
+        setContentView(R.layout.home_screen)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+    <!-- ScrollView for main content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Header Section -->
+            <include layout="@layout/home_header" />
+
+            <!-- Search Bar -->
+            <include layout="@layout/home_search_bar" />
+
+            <!-- Promotional Banner -->
+            <include layout="@layout/home_promotional_banner" />
+
+            <!-- Ingredients Section -->
+            <include layout="@layout/home_ingredients_section" />
+
+            <!-- Best Selling Section -->
+            <include layout="@layout/home_best_selling_section" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation Bar -->
+    <include layout="@layout/home_bottom_navigation" />
+
+</LinearLayout>
+
