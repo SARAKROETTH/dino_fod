@@ -6,4 +6,6 @@
         <item name="android:statusBarColor">#1F1F1F</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
+
+    <style name="Theme.DinoFood" parent="Base.Theme.DailyVitality" />
 </resources>

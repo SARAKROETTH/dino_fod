@@ -13,11 +13,11 @@
         android:layout_height="66dp"
         android:layout_marginTop="80dp"
         android:layout_weight="1"
-        android:background="@drawable/shape_logo"
+        android:background="@drawable/bg_logo"
         android:contentDescription="TODO"
         android:padding="15dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logo_image"
+        android:src="@drawable/img_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -74,7 +74,7 @@
             android:fontFamily="@font/dm_sans"
             android:textSize="24sp"
             android:layout_marginRight="12sp"
-            android:background="@drawable/border_input_otp"
+            android:background="@drawable/text_edit_border"
             android:inputType="phone"
             android:padding="12sp"
             />
@@ -86,7 +86,7 @@
             android:fontFamily="@font/dm_sans"
             android:textSize="24sp"
             android:layout_marginRight="12sp"
-            android:background="@drawable/border_input_otp"
+            android:background="@drawable/text_edit_border"
             android:inputType="phone"
             android:padding="12sp"
             />
@@ -98,7 +98,7 @@
             android:layout_marginRight="12sp"
             android:fontFamily="@font/dm_sans"
             android:textSize="24sp"
-            android:background="@drawable/border_input_otp"
+            android:background="@drawable/text_edit_border"
             android:inputType="phone"
             android:padding="12sp"
             />
@@ -110,7 +110,7 @@
             android:layout_marginRight="12sp"
             android:fontFamily="@font/dm_sans"
             android:textSize="24sp"
-            android:background="@drawable/border_input_otp"
+            android:background="@drawable/text_edit_border"
             android:inputType="phone"
             android:padding="12sp"
             />
@@ -121,7 +121,7 @@
             android:hint="0"
             android:fontFamily="@font/dm_sans"
             android:textSize="24sp"
-            android:background="@drawable/border_input_otp"
+            android:background="@drawable/text_edit_border"
             android:inputType="phone"
             android:padding="12sp"
             />
