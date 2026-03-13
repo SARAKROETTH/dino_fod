@@ -52,10 +52,11 @@ class DetailActivity : AppCompatActivity() {
         scrollEventTriger(binding)
     }
 
-
-
-
 }
+
+    private fun loadNutruition(){
+
+    }
 //   Scroll event to show button add to card
     private fun scrollEventTriger(binding : ActivityDetailBinding ): Unit {
 
@@ -84,6 +85,9 @@ class DetailActivity : AppCompatActivity() {
 
     }
 }
+
+
+
 
 class DetailViewModelFactory(
     private val repository: DetailProductRepository

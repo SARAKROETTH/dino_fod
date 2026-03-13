@@ -76,7 +76,7 @@
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="12dp"
-                android:fontFamily="@font/dm_sans"
+                android:fontFamily="@font/dm_sans_bold"
                 android:text="Shrimp, Broccoli and Rice in the Bowl"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -102,7 +102,7 @@
                 android:text="Nutritions Value"
                 android:textSize="20sp"
                 android:padding="12dp"
-                android:fontFamily="@font/dm_sans"
+                android:fontFamily="@font/dm_sans_bold"
                 android:textStyle="bold"
                 />
             <LinearLayout
@@ -111,65 +111,9 @@
                 android:orientation="horizontal"
                 android:paddingVertical="12sp"
                 >
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:layout_margin="5dp"
-                    app:cardElevation="1dp"
-                    >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="12dp"
-                        >
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_egg_protein"
-                            android:padding="2sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Protetin"
-                            android:textSize="18sp"
-                            android:fontFamily="@font/dm_sans"
-                            />
 
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="10dp"
-                    android:layout_margin="5dp"
-                    app:cardElevation="1dp"
-                    >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:padding="12dp"
-                        >
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_egg_protein"
-                            android:padding="2sp"
-                            />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Protetin"
-                            android:textSize="24sp"
-                            android:fontFamily="@font/dm_sans"
-                            />
-
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
 
 
 

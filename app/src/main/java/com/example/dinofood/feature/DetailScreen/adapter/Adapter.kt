@@ -1,12 +1,10 @@
 package com.example.dinofood.feature.DetailScreen.adapter
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dinofood.databinding.IngredientItemCardBinding
 import com.example.dinofood.feature.DetailScreen.model.Ingredient
-import kotlin.contracts.contract
 
 class Adapter(private val list: List<Ingredient>): RecyclerView.Adapter<Adapter.ViewHolder>() {
 

@@ -21,13 +21,13 @@
             android:name=".feature.auth.view.VerifyOtpActivity"
             android:exported="false" />
         <activity
-            android:name=".feature.home.view.BaseActivity"
+            android:name=".feature.DetailScreen.view.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".feature.DetailScreen.view.DetailActivity"
+            android:name=".feature.home.view.BaseActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
